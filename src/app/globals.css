@@ -25,3 +25,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.inc-dec-button {
+  position: relative;
+  left: 20px;
+}
+
+.inc-dec-button:hover {
+  opacity: .6;
+}
+
+.reset-button:hover {
+  filter: drop-shadow(0 0 10px #EF4444);
+}
