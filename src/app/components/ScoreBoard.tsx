@@ -84,17 +84,17 @@ export const Scoreboard: React.FC = () => {
   };
 
   return (
-    <main className="flex relative justify-center m-auto">
+    <main className="flex relative mt-8">
       {teams.map((t, index) => (
-        <div key={index} className="w-28 mx-44">
-          <h1 className="font-black text-4xl">{t.team}</h1>
-          <p className="uppercase">{t.player}</p>
+        <div key={index} className=" w-40 xl:w-auto mx-44">
+          <h1 className="font-black text-3xl xl:text-6xl">{t.team}</h1>
+          <p className="uppercase text-center mt-3">{t.player}</p>
           <button className="inc-dec-button text-2xl" onClick={() => handleIncrementTeam(index + 1)}>{t.iconUp}</button>
-          <p className="relative right-6 justify-center mx-auto text-[14rem] font-black my-0 py-0">{t.score}</p>
+          <p className="relative right-6 justify-center mx-auto text-center text-[14rem] font-black my-0 py-0">{t.score}</p>
           <button className="inc-dec-button rotate-[180deg]" onClick={() => handleDecrementTeam(index + 1)}>{t.iconDown}</button>
         </div>
       ))}
-      <button onClick={handleReset} className="reset-button fixed left-[49%] top-[50%] bg-red-500 px-4 py-2 rounded">
+      <button onClick={handleReset} className="reset-button fixed left-[45%] top-[50%] bg-red-500 px-4 py-2 rounded">
         Resetear
       </button>
     </main>

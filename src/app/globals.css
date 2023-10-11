@@ -35,6 +35,22 @@ body {
   opacity: .6;
 }
 
+.logo {
+  display: none;
+}
+
 .reset-button:hover {
   filter: drop-shadow(0 0 10px #EF4444);
+}
+
+@media (min-width:1200px) {
+  .logo {
+    display: block;
+  }
+  .inc-dec-button {
+    display: none;
+  }
+  .reset-button {
+    display: none;
+  }
 }
