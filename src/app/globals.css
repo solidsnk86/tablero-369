@@ -123,6 +123,7 @@ body {
   .name-team {
     font-weight: 900;
     letter-spacing: 3px;
+    font-size: 3rem;
   }
   .score {
     font-size: 14rem;
@@ -153,6 +154,7 @@ body {
   .name-team {
     font-weight: 900;
     letter-spacing: 3px;
+    font-size: 4rem;
   }
   .score {
     font-size: 18rem;
