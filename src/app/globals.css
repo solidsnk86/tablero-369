@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Digital-7';
+  src:url('../../public/fonts/Digital-7.ttf.woff') format('woff'),
+      url('../../public/fonts/Digital-7.ttf.svg#Digital-7') format('svg'),
+      url('../../public/fonts/Digital-7.ttf.eot'),
+      url('../../public/fonts/Digital-7.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -26,28 +36,80 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.inc-dec-button {
-  position: relative;
-  left: 20px;
-}
-
-.inc-dec-button:hover {
-  opacity: .6;
+.team {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .logo {
-  display: none;
+  position: absolute;
+  top: 15px;
+  left: calc(50% - 70px);
+}
+
+.timer-game {
+  position: absolute;
+  left: calc(50% - 50px);
+  color: greenyellow;
+  text-shadow: 0 0 5px greenyellow;
+  top: 30%;
+  font-size: 3rem;
+  font-family: 'Digital-7';
+}
+
+.score {
+  font-size: 10rem;
+  font-weight: 900;
+}
+
+#icon-board {
+  padding: 0;
+  width: 90px;
+  height: 90px;
+}
+
+#icon-board:hover {
+  opacity: .7;
+}
+
+.start-button, .pause-button {
+  position: relative;
+  top: 60%;
+}
+
+.reset-button {
+  position: relative;
+  top: 50%;
 }
 
 .reset-button:hover {
-  filter: drop-shadow(0 0 10px #EF4444);
+  filter: drop-shadow(0 0 20px #EF4444);
 }
 
-@media (min-width:1200px) {
-  .logo {
-    display: block;
+@media (max-width:762px) {
+  body {
+    width: 100%;
   }
-  .inc-dec-button {
+  .main-board {
+    width: 100%;
+  }
+  #icon-board {
+    height: 60px;
+    width: 60px;
+  }
+  .score {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width:1100px) {
+  body {
+    width: 100%;
+  }
+  .teams-div {
+    margin: 100px 140px 0 140px;
+  }
+  #icon-board {
     display: none;
   }
   .reset-button {
