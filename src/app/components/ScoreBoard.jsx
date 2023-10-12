@@ -3,13 +3,12 @@ import { IconBoard } from "@/app/components/IconBoard";
 
 export const Scoreboard = () => {
   const maxScore = 15;
+
   const initialScoreTeam1 = parseInt(localStorage.getItem("scoreTeam1")) || 0;
   const initialScoreTeam2 = parseInt(localStorage.getItem("scoreTeam2")) || 0;
-  const initialTimeMatch = parseInt(localStorage.getItem("interruption")) || [];
 
   const [scoreTeam1, setScoreTeam1] = useState(initialScoreTeam1);
   const [scoreTeam2, setScoreTeam2] = useState(initialScoreTeam2);
-  const [timeMatch, setTimeMach] = useState(initialTimeMatch)
 
   const [remainingTime, setRemainingTime] = useState(5400);
   const [isTimerPaused, setIsTimerPaused] = useState(true);
@@ -45,8 +44,7 @@ export const Scoreboard = () => {
   useEffect(() => {
     localStorage.setItem("scoreTeam1", scoreTeam1);
     localStorage.setItem("scoreTeam2", scoreTeam2);
-    localStorage.setItem("interruption", timeMatch)
-  }, [scoreTeam1, scoreTeam2, timeMatch]);
+  }, [scoreTeam1, scoreTeam2]);
 
   useEffect(() => {
     let intervalId;
