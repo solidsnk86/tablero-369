@@ -6,10 +6,8 @@ import { IconBoard } from "@/app/components/IconBoard";
 export const Scoreboard = () => {
   const maxScore = 15;
 
-  const initialScoreTeam1 =
-    parseInt(window.localStorage.getItem("scoreTeam1")) || 0;
-  const initialScoreTeam2 =
-    parseInt(window.localStorage.getItem("scoreTeam2")) || 0;
+  const initialScoreTeam1 = typeof window !== "undefined" ? parseInt(window.localStorage.getItem("scoreTeam1")) || 0 : 0;
+  const initialScoreTeam2 = typeof window !== "undefined" ? parseInt(window.localStorage.getItem("scoreTeam2")) || 0 : 0;
 
   const [scoreTeam1, setScoreTeam1] = useState(initialScoreTeam1);
   const [scoreTeam2, setScoreTeam2] = useState(initialScoreTeam2);
