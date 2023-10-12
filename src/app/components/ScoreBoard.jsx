@@ -90,8 +90,8 @@ export const Scoreboard = () => {
       <span className="timer-game">{formatTime(remainingTime)}</span>
 
       <div className="teams-div block w-44 justify-center m-auto">
-        <h2 className="team">{nameOne}</h2>
-        <p className="my-4">{teamR}</p>
+        <h2 className="name-team">{nameOne}</h2>
+        <p className="team-feature my-4">{teamR}</p>
         <button onClick={handleIncrementTeam1}>
           <IconBoard />
         </button>
@@ -126,8 +126,8 @@ export const Scoreboard = () => {
       </div>
 
       <div className=" teams-div block w-44 justify-center m-auto">
-        <h2 className="team">{nameTwo}</h2>
-        <p className="my-4">{teamL}</p>
+        <h2 className="name-team">{nameTwo}</h2>
+        <p className="team-feature my-4">{teamL}</p>
         <button onClick={handleIncrementTeam2}>
           <IconBoard />
         </button>
