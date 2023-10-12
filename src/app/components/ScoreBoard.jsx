@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useState, useEffect } from "react";
 import { IconBoard } from "@/app/components/IconBoard";
@@ -6,8 +6,10 @@ import { IconBoard } from "@/app/components/IconBoard";
 export const Scoreboard = () => {
   const maxScore = 15;
 
-  const initialScoreTeam1 = parseInt(localStorage.getItem("scoreTeam1")) || 0;
-  const initialScoreTeam2 = parseInt(localStorage.getItem("scoreTeam2")) || 0;
+  const initialScoreTeam1 =
+    parseInt(window.localStorage.getItem("scoreTeam1")) || 0;
+  const initialScoreTeam2 =
+    parseInt(window.localStorage.getItem("scoreTeam2")) || 0;
 
   const [scoreTeam1, setScoreTeam1] = useState(initialScoreTeam1);
   const [scoreTeam2, setScoreTeam2] = useState(initialScoreTeam2);
@@ -44,8 +46,10 @@ export const Scoreboard = () => {
   };
 
   useEffect(() => {
-    localStorage.setItem("scoreTeam1", scoreTeam1);
-    localStorage.setItem("scoreTeam2", scoreTeam2);
+    if (typeof window !== undefined) {
+      window.localStorage.setItem("scoreTeam1", scoreTeam1);
+      window.localStorage.setItem("scoreTeam2", scoreTeam2);
+    }
   }, [scoreTeam1, scoreTeam2]);
 
   useEffect(() => {
@@ -53,7 +57,9 @@ export const Scoreboard = () => {
 
     if (!isTimerPaused) {
       intervalId = setInterval(() => {
-        setRemainingTime((previewTime) => (previewTime > 0 ? previewTime - 1 : 0));
+        setRemainingTime((previewTime) =>
+          previewTime > 0 ? previewTime - 1 : 0
+        );
       }, 1000);
     }
 
@@ -65,7 +71,9 @@ export const Scoreboard = () => {
   const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
-    return `${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
+    return `${String(minutes).padStart(2, "0")}:${String(
+      remainingSeconds
+    ).padStart(2, "0")}`;
   };
 
   const handleResetButton = () => {
@@ -83,10 +91,10 @@ export const Scoreboard = () => {
     setIsTimerPaused(true);
   };
 
-  const nameOne = 'Equipo 1';
-  const nameTwo = 'Equipo 2';
-  const teamL = 'Lisas';
-  const teamR = 'Rayadas';
+  const nameOne = "Equipo 1";
+  const nameTwo = "Equipo 2";
+  const teamL = "Lisas";
+  const teamR = "Rayadas";
 
   return (
     <main className="main-board flex text-center">
