@@ -4,7 +4,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-https://ssmvrt6d-3000.brs.devtunnels.ms/
 
 First, run the development server:
 
