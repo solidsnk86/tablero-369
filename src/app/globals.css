@@ -115,4 +115,7 @@ body {
   .reset-button {
     display: none;
   }
+  .start-button, .pause-button {
+    display: none;
+  }
 }
