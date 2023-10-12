@@ -51,10 +51,11 @@ body {
   position: absolute;
   left: calc(50% - 50px);
   color: greenyellow;
-  text-shadow: 0 0 5px greenyellow;
+  text-shadow: 0 0 9px greenyellow;
   top: 30%;
   font-size: 3rem;
   font-family: 'Digital-7';
+  letter-spacing: 1px;
 }
 
 .score {
@@ -84,6 +85,7 @@ body {
 
 .reset-button:hover {
   filter: drop-shadow(0 0 20px #EF4444);
+  transition: .3s all;
 }
 
 @media (max-width:762px) {
@@ -93,7 +95,16 @@ body {
   .main-board {
     width: 100%;
   }
+  .name-team {
+    margin: 5px;
+  }
+  .team-feature {
+    background-color: #F44336;
+    border-radius: 5px;
+    margin: 5px;
+  }
   #icon-board {
+    margin-top: 10px;
     height: 60px;
     width: 60px;
   }
@@ -112,6 +123,11 @@ body {
   .name-team {
     font-weight: 900;
     letter-spacing: 3px;
+  }
+  .team-feature {
+    font-size: 1.8rem;
+    background-color: #F44336;
+    border-radius: 5px;
   }
   #icon-board {
     display: none;

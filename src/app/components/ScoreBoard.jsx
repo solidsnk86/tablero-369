@@ -5,9 +5,11 @@ export const Scoreboard = () => {
   const maxScore = 15;
   const initialScoreTeam1 = parseInt(localStorage.getItem("scoreTeam1")) || 0;
   const initialScoreTeam2 = parseInt(localStorage.getItem("scoreTeam2")) || 0;
+  const initialTimeMatch = parseInt(localStorage.getItem("interruption")) || [];
 
   const [scoreTeam1, setScoreTeam1] = useState(initialScoreTeam1);
   const [scoreTeam2, setScoreTeam2] = useState(initialScoreTeam2);
+  const [timeMatch, setTimeMach] = useState(initialTimeMatch)
 
   const [remainingTime, setRemainingTime] = useState(5400);
   const [isTimerPaused, setIsTimerPaused] = useState(true);
@@ -43,14 +45,15 @@ export const Scoreboard = () => {
   useEffect(() => {
     localStorage.setItem("scoreTeam1", scoreTeam1);
     localStorage.setItem("scoreTeam2", scoreTeam2);
-  }, [scoreTeam1, scoreTeam2]);
+    localStorage.setItem("interruption", timeMatch)
+  }, [scoreTeam1, scoreTeam2, timeMatch]);
 
   useEffect(() => {
     let intervalId;
 
     if (!isTimerPaused) {
       intervalId = setInterval(() => {
-        setRemainingTime((prevTime) => (prevTime > 0 ? prevTime - 1 : 0));
+        setRemainingTime((previewTime) => (previewTime > 0 ? previewTime - 1 : 0));
       }, 1000);
     }
 
@@ -117,7 +120,7 @@ export const Scoreboard = () => {
           </button>
         ) : (
           <button
-            className="pause-button bg-yellow-500 px-4 py-2 rounded mx-5"
+            className="pause-button bg-yellow-600 px-4 py-2 rounded mx-5"
             onClick={handlePauseTime}
           >
             Pausa
