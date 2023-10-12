@@ -124,6 +124,39 @@ body {
     font-weight: 900;
     letter-spacing: 3px;
   }
+  .score {
+    font-size: 14rem;
+  }
+  .team-feature {
+    font-size: 1.8rem;
+    background-color: #F44336;
+    border-radius: 5px;
+  }
+  #icon-board {
+    display: none;
+  }
+  .reset-button {
+    display: none;
+  }
+  .start-button, .pause-button {
+    display: none;
+  }
+}
+
+@media (min-width:2100px) {
+  body {
+    width: 100%;
+  }
+  .teams-div {
+    margin: 100px 140px 0 140px;
+  }
+  .name-team {
+    font-weight: 900;
+    letter-spacing: 3px;
+  }
+  .score {
+    font-size: 18rem;
+  }
   .team-feature {
     font-size: 1.8rem;
     background-color: #F44336;
