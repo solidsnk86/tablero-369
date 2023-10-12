@@ -1,7 +1,7 @@
 'use client'
 
 import { Scoreboard } from './components/ScoreBoard'
-import Particles from './particles'
+import Particles from './components/particles'
 import Image from 'next/image'
 import '@/../public/logo-bap-removebg.png'
 
