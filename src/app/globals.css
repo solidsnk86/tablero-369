@@ -124,6 +124,7 @@ body {
   }
   .timer-game {
     font-size: 5rem;
+    width: 145px;
   }
   .score {
     font-size: 14rem;
