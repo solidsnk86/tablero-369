@@ -21,8 +21,8 @@ export default function DateBoard() {
 
   return (
     <div className="text-black">
-      <p className="absolute top-0 left-0 mx-1 my-1 bg-zinc-300 py-1 px-2 rounded-sm text-xl font-bold">
-       {`${dia}-${mes}-${anio}`}
+      <p className="absolute top-0 left-0 mx-1 my-1 bg-zinc-300 py-1 px-2 rounded-sm text-2xl font-bold">
+       {`${dia}/${mes}/${anio}`}
       </p>
       <p className="absolute top-0 right-0 mx-1 my-1 bg-zinc-300 py-1 px-2 rounded-sm w-[80px] font-[Digital-7] text-2xl font-black text-center">
        {`${hour}:${minutes.toFixed()}:${remainingSeconds.toFixed()}`}
