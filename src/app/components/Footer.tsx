@@ -13,7 +13,7 @@ export default function Footer() {
         }
     ]
     return (
-       <footer className="flex justify-center m-auto absolute bottom-0 flex-col text-center text-sm md:text-lg">
+       <footer className="flex justify-center m-auto absolute bottom-0 flex-col font-semibold text-center text-sm md:text-lg">
         {
             project.map((i) => (
                 <>
