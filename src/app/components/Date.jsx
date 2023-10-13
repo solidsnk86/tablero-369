@@ -21,7 +21,7 @@ export default function DateBoard() {
 
   return (
     <div className="text-black">
-      <span className="absolute top-0 left-0 mx-1 my-1 bg-zinc-300 p-1 rounded-sm text-xl font-bold">
+      <span className="absolute top-0 left-0 mx-1 my-1 bg-zinc-300 py-1 px-2 rounded-sm text-xl font-bold">
        {`${dia}-${mes}-${anio}`}
       </span>
       <span className="absolute top-0 right-0 mx-1 my-1 bg-zinc-300 py-1 px-2 rounded-sm w-[80px] font-[Digital-7] text-2xl font-black text-center">
