@@ -17,6 +17,7 @@ export default function DateBoard() {
   const hour = time.getHours();
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
+  const remainingSeconds = Math.floor(seconds % 60)
 
   return (
     <div className="text-black">
@@ -24,7 +25,7 @@ export default function DateBoard() {
        {`${dia}-${mes}-${anio}`}
       </span>
       <span className="absolute top-0 right-0 mx-1 my-1 bg-zinc-300 py-1 px-2 rounded-sm w-[80px] font-[Digital-7] text-2xl font-black text-center">
-       {`${hour}:${minutes.toFixed()}:${seconds.toFixed()}`}
+       {`${hour}:${minutes.toFixed()}:${remainingSeconds.toFixed()}`}
       </span>
     </div>
   );

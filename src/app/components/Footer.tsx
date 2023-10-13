@@ -1,3 +1,5 @@
+'use client'
+
 export default function Footer() {
     const linkedIn = () => {
         const url = 'https://www.linkedin.com/in/gabriel-calcagni/'
