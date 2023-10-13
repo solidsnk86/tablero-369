@@ -149,4 +149,6 @@ footer {
   .start-button, .pause-button {
     display: none;
   }
+  footer {
+    display: none;
 }
