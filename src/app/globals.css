@@ -18,6 +18,10 @@
   --background-end-rgb: 218, 91, 91;
 }
 
+body {
+  background-color: rgb(209, 190, 81);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
