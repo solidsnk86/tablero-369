@@ -16,6 +16,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 218, 91, 91;
+  --footer-text-light: 255, 255, 255; 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -82,6 +83,10 @@ body {
 .reset-button:hover {
   filter: drop-shadow(0 0 20px #EF4444);
   transition: .3s all;
+}
+
+footer {
+  color: var(--footer-text-light);
 }
 
 @media (max-width:762px) {
