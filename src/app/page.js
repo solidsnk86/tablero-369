@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="flex relative min-h-screen justify-center m-auto bg-gradient-to-tl from-black via-zinc-600/20 to-black">
               <figure className='logo'>
-                <Image src={logo} width={140} height={140} alt='Logo' />
+                <Image src={logo} width={160} height={160} alt='Logo' />
               </figure>
         <Particles className='absolute inset-0 -z-10 animate-fade-in' quantity={133} />
         <Scoreboard />

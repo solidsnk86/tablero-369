@@ -110,7 +110,7 @@ export const Scoreboard = () => {
         </button>
       </div>
 
-      <div>
+      <div className="grid my-auto space-y-6 pt-20">
         <button
           className="reset-button bg-red-500 px-4 py-2 rounded mx-5"
           onClick={handleResetButton}
@@ -119,14 +119,14 @@ export const Scoreboard = () => {
         </button>
         {isTimerPaused ? (
           <button
-            className="start-button bg-green-500 px-4 py-2 rounded mx-5"
+            className="start-button bg-green-500 px-4 py-2 rounded mx-5 transition-all"
             onClick={handleStartTime}
           >
             Inicio
           </button>
         ) : (
           <button
-            className="pause-button bg-yellow-600 px-4 py-2 rounded mx-5"
+            className="pause-button bg-yellow-600 px-4 py-2 rounded mx-5 transition-all"
             onClick={handlePauseTime}
           >
             Pausa
