@@ -114,7 +114,7 @@ footer {
   }
 }
 
-@media (max-width:1980px) {
+@media (min-width:1200px) {
   body {
     width: 100%;
     height: 100%;
@@ -147,6 +147,9 @@ footer {
     display: none;
   }
   .start-button, .pause-button {
+    display: none;
+  }
+  .footer {
     display: none;
   }
 }
