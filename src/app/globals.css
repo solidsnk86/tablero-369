@@ -15,7 +15,7 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 253, 230, 138;
+  --background-end-rgb: 255, 251, 197;
   --footer-text-light: 255, 255, 255; 
 }
 
