@@ -96,8 +96,6 @@ export const Scoreboard = () => {
 
   return (
     <main className="main-board flex text-center">
-      <span className="timer-game">{formatTime(remainingTime)}</span>
-
       <div className="teams-div block w-44 justify-center m-auto">
         <h2 className="name-team">{nameOne}</h2>
         <p className="team-feature my-4">{teamR}</p>
@@ -111,6 +109,7 @@ export const Scoreboard = () => {
       </div>
 
       <div className="grid my-auto space-y-6 pt-20">
+      <span className="timer-game">{formatTime(remainingTime)}</span>
         <button
           className="reset-button bg-red-500 px-4 py-2 rounded mx-5"
           onClick={handleResetButton}

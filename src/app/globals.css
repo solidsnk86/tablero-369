@@ -48,11 +48,8 @@ body {
 }
 
 .timer-game {
-  position: absolute;
-  left: calc(50% - 50px);
   color: greenyellow;
   text-shadow: 0 0 9px greenyellow;
-  top: 30%;
   font-size: 3rem;
   font-family: 'Digital-7';
   letter-spacing: 1px;
@@ -123,6 +120,9 @@ body {
     font-weight: 900;
     letter-spacing: 3px;
     font-size: 3rem;
+  }
+  .timer-game {
+    font-size: 5rem;
   }
   .score {
     font-size: 14rem;
