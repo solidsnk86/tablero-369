@@ -18,7 +18,7 @@ export default function Footer() {
             project.map((i) => (
                 <>
                 <p>{i.name}</p>
-                <p>{i.dev}<b className="text-orange-400 cursor-pointer" onClick={linkedIn}>{i.author}</b></p>
+                <p>{i.dev}<b className="text-orange-400 cursor-pointer hover:text-red-300" onClick={linkedIn}>{i.author}</b></p>
                 </>
             ))
         }

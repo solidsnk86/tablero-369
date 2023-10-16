@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { IconBoard } from "@/app/components/IconBoard";
+import DateBoard from "./Date";
 
 export const Scoreboard = () => {
   const maxScore = 15;
@@ -129,6 +130,7 @@ export const Scoreboard = () => {
             Pausa
           </button>
         )}
+        <DateBoard />
       </div>
 
       <div className=" teams-div block w-44 justify-center m-auto">

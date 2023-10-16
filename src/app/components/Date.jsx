@@ -18,14 +18,15 @@ export default function DateBoard() {
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
   const remainingSeconds = Math.floor(seconds % 60)
+  
 
   return (
     <div className="text-black">
-      <p className="absolute top-0 left-0 mx-1 my-1 bg-zinc-300 py-1 px-2 rounded-sm text-2xl font-bold">
+      <p className="date mx-1 my-1 bg-zinc-300 py-1 px-1 rounded-sm font-[Digital-7] font-black text-xl text-center">
        {`${dia}/${mes}/${anio}`}
       </p>
-      <p className="absolute top-0 right-0 mx-1 my-1 bg-zinc-300 py-1 px-2 rounded-sm w-[80px] font-[Digital-7] text-2xl font-black text-center">
-       {`${hour}:${minutes.toFixed()}:${remainingSeconds.toFixed()}`}
+      <p className="hour mx-1 my-1 bg-zinc-300 py-1 px-1 rounded-sm font-[Digital-7] font-black text-xl text-center">
+       {`${hour}:${minutes.toFixed()}:${remainingSeconds.toFixed(.0)}`}
       </p>
     </div>
   );

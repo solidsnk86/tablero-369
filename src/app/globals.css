@@ -135,6 +135,17 @@ footer {
     font-size: 14rem;
     padding: 0;
   }
+  .date, .hour {
+    position: fixed;
+    top: 0;
+  }
+  .date {
+    left: 0;
+  }
+  .hour {
+    right: 0;
+    width: calc(10% - 50px);
+  }
   .team-feature {
     font-size: 1.8rem;
     background-color: #F44336;
