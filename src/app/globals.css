@@ -144,7 +144,7 @@ footer {
   }
   .hour {
     right: 0;
-    width: calc(10% - 50px);
+    width: calc(10% - 66px);
   }
   .team-feature {
     font-size: 1.8rem;
