@@ -45,7 +45,7 @@ body {
 .logo {
   position: absolute;
   top: 15px;
-  left: calc(50% - 72px);
+  left: calc(50% - 78px);
 }
 
 .timer-game {
