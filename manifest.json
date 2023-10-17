@@ -1,0 +1,8 @@
+{
+    "name": "Tablero PWA",
+    "short_name": "PWA",
+    "description": "Tablero de tantos para bochas.",
+    "start_url": "/",
+    "display": "standalone"
+  }
+  
