@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Tablero BOCHAS - BAP',
-  description: 'Tablero de tantos para Bochas - Desarrollo de software por solidSnk86',
+  title: 'Tablero Digital - BAP',
+  description: 'Tablero de tantos para Bochas - Desarrollo de software por solidSnk86 todos los derechos reservados.',
 }
 
 export default function RootLayout({
